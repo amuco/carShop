@@ -9,6 +9,7 @@ $(document).ready(function () {
             "sAjaxSource": "/cars",
             "sAjaxDataProp": "",
             "order": [[0, "asc"]],
+            "datatype": 'json',
             "aoColumns": [
                 {"mData": "id"},
                 {"mData": "modelName"},
