@@ -1,4 +1,4 @@
-package com.carseller.cars.domain.wheels.serviceImpl;
+package com.carseller.cars.domain.wheels.service;
 
 import com.carseller.cars.domain.wheels.WheelsEntity;
 import com.carseller.cars.domain.wheels.WheelsService;
@@ -21,6 +21,7 @@ public class WheelsServiceImpl implements WheelsService {
     private WheelsRepository repository;
     private  WheelsConverter converter;
 
+    @Override
     public void saveFromXmL(NodeList list){
         log.info("Getting wheels from xml file");
        Set<WheelsDto> dtoSet= converter.extractWheelsFromFile(list);
@@ -28,6 +29,7 @@ public class WheelsServiceImpl implements WheelsService {
         repository.saveAll(wheelsEntitySet);
     }
 
+    @Override
     public List<WheelsEntity> getAll(){
         log.info("Return all wheels");
         return repository.findAll();

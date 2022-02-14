@@ -1,4 +1,4 @@
-package com.carseller.cars.domain.model.serviceImpl;
+package com.carseller.cars.domain.model.service;
 
 import com.carseller.cars.domain.engine.EngineEntity;
 import com.carseller.cars.domain.engine.EngineService;
@@ -30,6 +30,7 @@ public class ModelServiceImpl implements ModelService {
     private EngineService engineService;
     private WheelsService wheelsService;
 
+    @Override
     public void saveModelFromXml(NodeList list){
         log.info("Inserting car models from xml file");
         List<ModelDto> modelDtoList=converter.extractCarModels(list);
@@ -46,16 +47,19 @@ public class ModelServiceImpl implements ModelService {
         repository.saveAll(entityList);
     }
 
+    @Override
     public List<ResponseDto> getAllCarModels(){
         List<ModelEntity> modelEntityList=repository.findAll();
         return modelEntityList.stream().map(model -> converter.toDto(model)).collect(Collectors.toList());
     }
 
+    @Override
     public ResponseDto getByMake(String name){
         ModelEntity model= repository.findByModelName(name).orElseThrow(()->new NotFoundException(NotFound.NOT_FOUND_MODEL));
         return converter.toDto(model);
     }
 
+    @Override
     public ResponseDto findById(Long id){
         ModelEntity model=repository.findById(id).orElseThrow(()->new NotFoundException(NotFound.NOT_FOUND_MODEL));
         return converter.toDto(model);

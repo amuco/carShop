@@ -15,10 +15,6 @@ z
 Jsrc/main/java/com/carseller/cars/configurations/DataBaseConfiguration.java,6\2\6241796aca76084ac535ddd0ca7b3d16460ba1d8
 q
 Asrc/main/java/com/carseller/cars/domain/wheels/WheelsService.java,8\9\89113dd4f70c84f6e51a91246ce61605143b48c9
-Å
-Qsrc/main/java/com/carseller/cars/domain/engine/serviceImpl/EngineServiceImpl.java,a\3\a334f9d10c105f07c93be969c904a46521921510
-q
-Asrc/main/java/com/carseller/cars/domain/engine/EngineService.java,6\a\6aeeab8970ad8d861862a07a4742c72c9a19651c
 s
 Csrc/main/java/com/carseller/cars/repositories/WheelsRepository.java,0\5\05a9de61e74bde439e3315106008eb2a560dc73a
 s
@@ -33,8 +29,6 @@ p
 @src/main/java/com/carseller/cars/controller/IndexController.java,3\c\3c0f04815fa264b1c3ba497de8909ad4e567bb5e
 7
 pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-o
-?src/main/java/com/carseller/cars/domain/model/ModelService.java,c\4\c4f1471aa0d7a7faa07a627f4d70d2259a4a4051
 r
 Bsrc/main/java/com/carseller/cars/repositories/ModelRepository.java,e\0\e057200024536277b48d863092cf63dcd3580d84
 r
@@ -47,10 +41,6 @@ l
 <src/main/java/com/carseller/cars/tasks/FordIngesterTask.java,2\0\20ac80260424047c17f77851ce477c291ea7ce47
 q
 Asrc/main/java/com/carseller/cars/exception/NotFoundException.java,3\5\35b89edfab93b3cd0ff586baa308101f70b41849
-Å
-Qsrc/main/java/com/carseller/cars/domain/wheels/serviceImpl/WheelsServiceImpl.java,b\b\bb4f52a52ebb5ce356141c3e81d3e9cd79240c1c
-
-Osrc/main/java/com/carseller/cars/domain/model/serviceImpl/ModelServiceImpl.java,0\6\063b5dd6ad3e108525e867f63dd836be944e33f5
 h
 8src/main/java/com/carseller/cars/exception/NotFound.java,a\f\af0d08bf1eefd4a2714bf2ed2579a081aef62d10
 :
